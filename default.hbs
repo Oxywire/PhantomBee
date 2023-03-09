@@ -24,16 +24,6 @@
 
     <header id="gh-head" class="gh-head outer">
         <div class="gh-head-inner inner">
-            <!--<div class="gh-head-brand">
-                <a class="gh-head-logo{{#unless @site.logo}} no-image{{/unless}}" href="{{@site.url}}">
-                    {{#if @site.logo}}
-                        <img src="{{@site.logo}}" alt="{{@site.title}}">
-                    {{else}}
-                        {{@site.title}}
-                    {{/if}}
-                </a>
-                <button class="gh-burger"></button>
-            </div>-->
     {{#if @custom.show_publication_cover}}
         {{#if @site.cover_image}}
             {{!-- This is a responsive image, it loads different sizes depending on device
@@ -62,6 +52,16 @@
         </div>
     {{/match}}
     <nav id="stickyNav" class="gh-head-menu">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo{{#unless @site.logo}} no-image{{/unless}}" href="{{@site.url}}">
+                    {{#if @site.logo}}
+                        <img src="{{@site.logo}}" alt="{{@site.title}}">
+                    {{else}}
+                        {{@site.title}}
+                    {{/if}}
+                </a>
+                <button class="gh-burger"></button>
+            </div>
             {{navigation}}
      </nav>
         </div>
