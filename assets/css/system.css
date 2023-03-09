@@ -4,6 +4,7 @@ body {
     background-color: #202128;
     font-family: 'Montserrat', sans-serif;
 }
+a { transition: 0.3s all; }
 
 #gh-head {
     background: radial-gradient(64.66% 64.66% at 50% 35.34%, rgba(0, 0, 0, 0) 0%, #171629 100%), linear-gradient(90.09deg, #171629 0.08%, rgb(23 22 41 / 82%) 52.08%, #171629 99.93%), url(https://stickymc.com/system/bg-sm-orange.png);
@@ -107,6 +108,7 @@ h2.post-card-title {
     text-align: center;
     position: relative;
     text-shadow: 0px 1px 5px rgba(188, 94, 31, 0.28);
+    transition: 0.3s all;
 }
 h2.post-card-title::after {
     content: "";
