@@ -1164,7 +1164,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card.dynamic {
-        grid-column: span 3;
+        grid-column: span 2;
     }
 
     .post-card.dynamic .post-card-title {
