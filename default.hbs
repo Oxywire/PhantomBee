@@ -42,6 +42,7 @@
 
     {{#match @custom.header_style "!=" "Hidden"}}
         <div class="site-header-inner inner">
+            <a href="{{@site.url}}">
             {{#match @custom.navigation_layout "Logo on cover"}}
                 {{#if @site.logo}}
                     <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}">
@@ -49,6 +50,7 @@
                     <h1 class="site-title">{{@site.title}}</h1>
                 {{/if}}
             {{/match}}
+            </a>
         </div>
     {{/match}}
     <nav id="stickyNav" class="gh-head-menu">
