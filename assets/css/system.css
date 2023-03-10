@@ -1,13 +1,15 @@
 /* (c) 2023 system127. This stylesheet is for the exclusive use of StickyMC, not intended for others. */
 
 body {
-    background-color: #202128;
+    background-color: #202128 !important;
     font-family: 'Montserrat', sans-serif;
 }
 a { transition: 0.3s all; }
+html.dark-mode .article-byline-meta .author-name a { color: #fc9e72; }
+html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
 
 #gh-head {
-    background: radial-gradient(64.66% 64.66% at 50% 35.34%, rgba(0, 0, 0, 0) 0%, #171629 100%), linear-gradient(90.09deg, #171629 0.08%, rgb(23 22 41 / 82%) 52.08%, #171629 99.93%), url(https://stickymc.com/system/bg-sm-orange.png);
+    background: radial-gradient(64.66% 64.66% at 50% 35.34%, rgba(0, 0, 0, 0) 0%, #202128 100%), linear-gradient(90.09deg, #202128 0.08%, rgb(23 22 41 / 82%) 52.08%, #202128 99.93%), url(https://stickymc.com/system/bg-sm-orange.png);
     background-size: cover !important;
     background-position: center !important;
     margin-top: 0px;
@@ -80,7 +82,7 @@ a { transition: 0.3s all; }
 }
 
 .post-card {
-    background: rgb(36 35 53);
+    background: #282b34;
     border-radius: 8px;
 }
 .post-card-content {
@@ -191,4 +193,7 @@ h2.post-card-title::after {
     .voteSidebar { width: 100% !important; }
     .voteContent { width: 100% !important; }
     .block+.block { margin-top: 25px; }
+}
+@media (max-width:673px) {
+    .voteContent .first, .voteContent .second { grid-column: span 12; }
 }
