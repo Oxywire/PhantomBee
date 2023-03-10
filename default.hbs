@@ -53,13 +53,6 @@
     {{/match}}
     <nav id="stickyNav" class="gh-head-menu">
             <div class="gh-head-brand">
-                <a class="gh-head-logo{{#unless @site.logo}} no-image{{/unless}}" href="{{@site.url}}">
-                    {{#if @site.logo}}
-                        <img src="{{@site.logo}}" alt="{{@site.title}}">
-                    {{else}}
-                        {{@site.title}}
-                    {{/if}}
-                </a>
                 <button class="gh-burger"></button>
             </div>
             {{navigation}}
