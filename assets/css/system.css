@@ -127,3 +127,68 @@ h2.post-card-title::after {
     font-size: 16px !important;
     overflow: hidden;
 }
+
+.voteInner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.voting {
+    display: flex;
+    gap: 25px;
+    margin: 50px 0px;
+}
+.voting .block {
+    background: #282b34;
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+.voteSidebar {
+    width: 30%;
+    text-align: center;
+}
+.voteSidebar p+p { margin-top: 25px; }
+.voteContent {
+    width: 70%;
+}
+.voteContent ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    row-gap: 25px;
+}
+.voteContent .first {
+    grid-column: span 4;
+}
+.voteContent .second {
+    grid-column: span 6;
+}
+.voteContent li a {
+    display: block;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #fff;
+    background: rgba(0,0,0,0.1);
+    border-bottom: 4px solid rgba(255,255,255,0.05);
+}
+.voteContent li a:hover {
+    color: #fc9e72;
+    border-color: #fc9e72;
+}
+
+@media (max-width:1211px) {
+    .voteInner { max-width: 85vw; }
+    .voting { display: block; }
+    .voteSidebar { width: 100% !important; }
+    .voteContent { width: 100% !important; }
+    .block+.block { margin-top: 25px; }
+}
