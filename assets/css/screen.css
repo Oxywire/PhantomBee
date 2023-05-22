@@ -440,7 +440,7 @@ production stylesheet in assets/built/screen.css
     flex-wrap: wrap;
     gap: 32px;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -706,18 +706,29 @@ production stylesheet in assets/built/screen.css
         height: 64px;
     }
 
+    /* CHANGES MADE */
     #gh-head .gh-head-inner {
         grid-template-rows: auto 1fr auto;
         grid-template-columns: 1fr;
-        gap: 48px;
     }
 
+    /* CHANGES MADE */
     #gh-head .gh-head-brand {
         display: grid;
         grid-template-columns: 1fr auto auto;
         grid-column-start: 1;
         align-items: center;
         height: 64px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+    }
+    
+    .mobile-trigger {
+        display: block;
+        visibility: visible !important;
+        opacity: 100 !important;
     }
 
     #gh-head .gh-head-logo {
@@ -740,10 +751,16 @@ production stylesheet in assets/built/screen.css
         opacity: 0;
     }
 
+    /* CHANGES MADE */
     #gh-head .gh-head-menu {
-        margin: 0;
+        margin: 0 auto;
         transition: none;
         transform: translateY(0);
+    }
+
+    /* CHANGES MADE */
+    #stickyNav {
+        width: 95% !important;
     }
 
     #gh-head .nav {
@@ -752,10 +769,16 @@ production stylesheet in assets/built/screen.css
         line-height: 1.4;
     }
 
+    /* CHANGES MADE */
     #gh-head .nav a {
-        font-size: 2.6rem;
+        font-size: 2rem !important;
         font-weight: 600;
         text-transform: none;
+    }
+
+    /* CHANGES MADE */
+    #stickyNav li a {
+        height: 60px !important;
     }
 
     #gh-head .nav li {
@@ -785,9 +808,11 @@ production stylesheet in assets/built/screen.css
         -webkit-overflow-scrolling: touch;
     }
 
+    /* CHANGES MADE */
     .gh-head-open.has-cover #gh-head,
     .gh-head-open.has-cover #gh-head .gh-head-actions {
         background-color: var(--ghost-accent-color);
+        overflow: hidden;
     }
 
     .gh-head-open #gh-head .gh-head-menu,
@@ -850,8 +875,10 @@ production stylesheet in assets/built/screen.css
 }
 
 @media (max-width: 991px) {
+    /* CHANGES MADE */
     .post-feed {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
     }
 }
 
@@ -2014,21 +2041,22 @@ iframe.instagram-media + script + :not([id]) {
 /* 10. Site Footer
 /* ---------------------------------------------------------- */
 
+
+/* CHANGES MADE */
 .site-footer {
     position: relative;
-    margin: max(12vmin, 64px) 0 0 0;
-    padding-top: 48px;
-    padding-bottom: 140px;
     color: #fff;
-    background: color-mod(var(--color-darkgrey) l(-5%));
+    margin-top: 15px;
 }
 
 .site-footer .inner {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
     color: rgba(255,255,255,0.7);
-    font-size: 1.3rem;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.075);
 }
 
 .site-footer .copyright a {
@@ -2081,11 +2109,11 @@ iframe.instagram-media + script + :not([id]) {
 }
 
 @media (max-width: 767px) {
+    /* CHANGES MADE */
     .site-footer .inner {
         max-width: 500px;
-        grid-template-columns: 1fr;
-        grid-gap: 0;
         text-align: center;
+        flex-direction: column;
     }
     .site-footer .copyright,
     .site-footer .copyright a {

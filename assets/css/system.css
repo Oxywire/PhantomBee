@@ -56,15 +56,16 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
     align-items: center;
     padding: 0 20px;
     height: 95px;
+    font-size: 2.1rem;
     font-weight: 700;
 }
 #stickyNav li a:hover {
-    color: #fc9e72;
+    color: #e9872a;
 }
 #stickyNav li:after {
     content: "";
     display: block;
-    background-color: #fc9e72;
+    background-color: #e9872a;
     width: 0%;
     height: 4px;
     position: absolute;
@@ -78,7 +79,7 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
     width: calc(100%-40px);
 }
 #stickyNav .nav-current a {
-    color: #fc9e72;
+    color: #e9872a;
 }
 
 .post-card {
@@ -98,7 +99,7 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
     border-radius: 8px 0px 0px 8px;
 }
 h2.post-card-title {
-    background-image: linear-gradient(114deg,#fc9e72 0,#e97743 100%);
+    background-image: linear-gradient(114deg,#ffac1b,#e97743);
     font-weight: 800;
     font-size: 24px !important;
     background-color: #fc9e72;
@@ -185,6 +186,27 @@ h2.post-card-title::after {
 .voteContent li a:hover {
     color: #fc9e72;
     border-color: #fc9e72;
+}
+
+.rulesInner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: #282b34;
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+.rulesInner h1, .rulesInner strong.section {
+    color: #ffee93;
+}
+.rulesInner hr {
+    border-top-color: #9f9f9f !important;
+}
+
+.mobile-trigger {
+    display: none;
+    visibility: none;
+    opacity: 0;
 }
 
 @media (max-width:1211px) {
