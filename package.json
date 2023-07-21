@@ -106,6 +106,26 @@
                 ],
                 "default": "Modern sans-serif"
             },
+            "vote1": {
+                "type": "text",
+                "default": "https://best-minecraft-servers.co/server-stickymc.2033/vote"
+            },
+            "vote2": {
+                "type": "text",
+                "default": "https://minecraft.buzz/vote/1531"
+            },
+            "vote3": {
+                "type": "text",
+                "default": "https://minecraftservers.org/vote/470921"
+            },
+            "vote4": {
+                "type": "text",
+                "default": "https://topminecraftservers.org/vote/24780"
+            },
+            "vote5": {
+                "type": "text",
+                "default": "https://www.planetminecraft.com/server/stickymc-4642690/vote/"
+            },
             "body_font": {
                 "type": "select",
                 "options": [
