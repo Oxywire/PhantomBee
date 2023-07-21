@@ -152,6 +152,9 @@ h2.post-card-title::after {
 .voteSidebar p+p { margin-top: 25px; }
 .voteContent {
     width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .voteContent ul {
     padding: 0px;
@@ -164,6 +167,7 @@ h2.post-card-title::after {
     text-align: center;
     gap: 15px;
     row-gap: 25px;
+    width: 100%;
 }
 .voteContent .first {
     grid-column: span 4;
@@ -216,7 +220,7 @@ h2.post-card-title::after {
 }
 
 .ipAddress {
-    background: #f2815f;
+    background: #f06d44;
     padding: 10px 30px;
     border-radius: 100px;
     color: #fff;
@@ -224,6 +228,7 @@ h2.post-card-title::after {
     width: fit-content;
     margin: -20px auto 0 auto;
     cursor: pointer;
+    z-index: 1;
 }
 
 @media (max-width:1211px) {
