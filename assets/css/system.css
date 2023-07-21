@@ -9,7 +9,6 @@ html.dark-mode .article-byline-meta .author-name a { color: #fc9e72; }
 html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
 
 #gh-head {
-    background: radial-gradient(64.66% 64.66% at 50% 35.34%, rgba(0, 0, 0, 0) 0%, #202128 100%), linear-gradient(90.09deg, #202128 0.08%, rgb(23 22 41 / 82%) 52.08%, #202128 99.93%), url(https://stickymc.com/system/bg-sm-orange.png);
     background-size: cover !important;
     background-position: center !important;
     margin-top: 0px;
@@ -207,6 +206,24 @@ h2.post-card-title::after {
     display: none;
     visibility: none;
     opacity: 0;
+}
+
+.copyright p {
+    margin-bottom: -10px;
+}
+.copyright small, .copyright .system127 {
+    color: rgba(255,255,255,0.4);
+}
+
+.ipAddress {
+    background: #f2815f;
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 600;
+    width: fit-content;
+    margin: -20px auto 0 auto;
+    cursor: pointer;
 }
 
 @media (max-width:1211px) {

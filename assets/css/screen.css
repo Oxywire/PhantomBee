@@ -140,6 +140,9 @@ production stylesheet in assets/built/screen.css
 
 .site-header-inner {
     position: relative;
+    /* CHANGES MADE */
+    display: flex;
+    flex-direction: column;
 }
 
 .site-header-content.left-aligned .site-header-inner {
@@ -269,7 +272,8 @@ production stylesheet in assets/built/screen.css
 }
 
 .has-cover:not(.home-template) .gh-head {
-    background-color: var(--ghost-accent-color);
+    /* CHANGES MADE */
+    background-color: transparent;
     color: #fff;
 }
 
@@ -2053,7 +2057,8 @@ iframe.instagram-media + script + :not([id]) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
+    /* CHANGES MADE */
+    padding: 31px 0;
     color: rgba(255,255,255,0.7);
     font-size: 13px;
     border-top: 1px solid rgba(255,255,255,0.075);
