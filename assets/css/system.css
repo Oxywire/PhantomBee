@@ -157,11 +157,12 @@ h2.post-card-title::after {
     margin: 50px 0px;
 }
 .voting .block {
-    background: #282b34;
+    background: #fbe195;
     border-radius: 8px;
     padding: 20px 40px;
 }
 .voteSidebar {
+    background: #fbe195;
     width: 30%;
     text-align: center;
 }
@@ -199,8 +200,8 @@ h2.post-card-title::after {
     text-transform: uppercase;
     border-radius: 4px;
     color: #fff;
-    background: rgba(0,0,0,0.1);
-    border-bottom: 4px solid rgba(255,255,255,0.05);
+    background: #be3a08;
+    box-shadow: inset 0 -4px #0000001a;
 }
 .voteContent li a:hover {
     color: #fc9e72;
