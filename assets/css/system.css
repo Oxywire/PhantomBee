@@ -145,6 +145,18 @@ h2.post-card-title::after {
     font-size: 16px !important;
     overflow: hidden;
 }
+.post-card-meta { margin-top: 0; }
+.post-card-content .post-card-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    gap: 12px;
+    letter-spacing: -.005em;
+    line-height: 1;
+    margin: 12px 0 0 0;
+}
 
 .voteInner {
     max-width: 1200px;
@@ -233,7 +245,7 @@ h2.post-card-title::after {
     margin-bottom: -10px;
 }
 .copyright small, .copyright .system127 {
-    color: rgba(255,255,255,0.4);
+    color: hsla(0, 0.9%, 21.4%, 0.7);
 }
 
 .ipAddress {
