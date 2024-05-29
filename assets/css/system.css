@@ -1,5 +1,8 @@
 /* (c) 2023 system127. This stylesheet is for the exclusive use of StickyMC, not intended for others. */
 
+/* lilita-one-regular - latin */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 body {
     background-color: #202128 !important;
     font-family: 'Montserrat', sans-serif;
@@ -39,7 +42,7 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
 .address p {margin: 0;}
 
 #stickyNav {
-    background: rgba(255,255,255,0.05);
+    background: #fcd35a;
     border-radius: 8px;
     padding: 0 22px 0 17px;
     margin: 50px auto;
@@ -50,21 +53,24 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
     position: relative;
 }
 #stickyNav li a {
-    color: rgba(255,255,255,0.75);
+    font-family: "Lilita One", sans-serif;
+    color: rgba(164, 70, 70, 0.75);
     display: flex;
     align-items: center;
     padding: 0 20px;
     height: 95px;
-    font-size: 2.1rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 400;
+    opacity: 0.9;
 }
 #stickyNav li a:hover {
-    color: #e9872a;
+    color: #852204;
+    opacity: 1;
 }
 #stickyNav li:after {
     content: "";
     display: block;
-    background-color: #e9872a;
+    background-color: #852204;
     width: 0%;
     height: 4px;
     position: absolute;
@@ -78,7 +84,7 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
     width: calc(100%-40px);
 }
 #stickyNav .nav-current a {
-    color: #e9872a;
+    color: #852204;
 }
 
 .post-card {
