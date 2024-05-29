@@ -4,8 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 body {
-    background-color: #202128 !important;
+    background-color: #fff6dd !important;
     font-family: 'Montserrat', sans-serif;
+}
+body::before {
+    display: block;
+    height: 433px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0,#fff6dd00,#ffdd79);
 }
 a { transition: 0.3s all; }
 html.dark-mode .article-byline-meta .author-name a { color: #fc9e72; }
@@ -88,11 +98,13 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
 }
 
 .post-card {
-    background: #282b34;
+    background: #fbe195;
     border-radius: 8px;
 }
 .post-card-content {
     padding: 0px 25px 25px;
+    align-items: center;
+    justify-content: center;
 }
 .post-card-large .post-card-content {
     padding: 25px;
@@ -104,15 +116,10 @@ html.dark-mode .article-byline-meta .author-name a:hover { opacity: 0.9; }
     border-radius: 8px 0px 0px 8px;
 }
 h2.post-card-title {
-    background-image: linear-gradient(114deg,#ffac1b,#e97743);
-    font-weight: 800;
-    font-size: 24px !important;
-    background-color: #fc9e72;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 3.6rem !important;
+    color: #b73131 !important;
     text-align: center;
     position: relative;
     text-shadow: 0px 1px 5px rgba(188, 94, 31, 0.28);
@@ -122,16 +129,19 @@ h2.post-card-title::after {
     content: "";
     width: 32px;
     margin: 10px auto;
-    background-image: linear-gradient(114deg,#fc9e72 0,#e97743 100%);
+    background-image: linear-gradient(114deg,#e89d86,#852204);
     height: 3px;
     border-radius: 100px;
     display: block;
     box-shadow: 0px 1px 5px rgba(188, 94, 31, 0.28);
 }
+.post-card-excerpt {
+    color: #333 !important;
+}
 .post-card-excerpt p {
     text-align: center;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.432);
+    color: #333;
     font-size: 16px !important;
     overflow: hidden;
 }
@@ -226,13 +236,16 @@ h2.post-card-title::after {
 }
 
 .ipAddress {
-    background: #f06d44;
+    background: #be3a08;
     padding: 10px 30px;
-    border-radius: 100px;
+    border-radius: 5px;
     color: #fff;
-    font-weight: 600;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
     width: fit-content;
     margin: -20px auto 0 auto;
+    box-shadow: inset 0 -4px #0000001a;
     cursor: pointer;
     z-index: 1;
 }
