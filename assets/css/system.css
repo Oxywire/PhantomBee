@@ -145,7 +145,7 @@ h2.post-card-title::after {
     font-size: 16px !important;
     overflow: hidden;
 }
-.post-card-meta { margin-top: 0; }
+.post-card-meta { margin-top: 0; color: #b73131; }
 .post-card-content .post-card-tags {
     display: flex;
     align-items: center;
@@ -156,6 +156,7 @@ h2.post-card-title::after {
     letter-spacing: -.005em;
     line-height: 1;
     margin: 12px 0 0 0;
+    color: #b73131;
 }
 
 .voteInner {
